@@ -52,7 +52,7 @@ export const ZondaCinque = lazy(() =>
   }))
 );
 
-// Lazy load Bmw component with proper typing
+
 export const Bmw = lazy(() =>
   import("../../components/Scene/Car/g81/Model").then(({ Bmw }) => ({
     default: Bmw,

@@ -654,7 +654,7 @@ type GLTFResult = GLTF & {
 
 }
 
-type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicElements['mesh']>>
+
 
 export function Bmw(props: any) {
   const { nodes, materials } = useGLTF('/models/g81.glb') as GLTFResult

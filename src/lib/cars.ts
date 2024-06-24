@@ -577,44 +577,54 @@ export const cars = [
   {
     logo: bmwLogo,
     country: germany,
-    manufacturer: "BMW",
+    manufacturer: "Bmw",
     model: "G81 M3",
     year: "2023",
     sound: slsamgblkSound,
     colors: [
+      
       {
-        name: "Pearl Brown",
-        hexCode: "#654C38",
+        "name": "Frozen Portimao Blue Metallic",
+        "hexCode": "#3D5A80"
       },
       {
-        name: "Green",
-        hexCode: "#1a5e1a",
+        "name": "Ind Frozen Pure Grey II Metallic",
+        "hexCode": "#A8A8A8"
       },
       {
-        name: "Blue",
-        hexCode: "#63b4d8",
+        "name": "Individual Dravit Grey Metallic",
+        "hexCode": "#5D5C61"
       },
       {
-        name: "Yellow",
-        hexCode: "#ffa500",
+        "name": "Isle of Man Green Metallic",
+        "hexCode": "#1C6E3E"
       },
       {
-        name: "Iridium Silver Metallic",
-        hexCode: "#C9CDCE",
+        "name": "Portimao Blue Metallic",
+        "hexCode": "#354F8E"
       },
       {
-        name: "Magno Alanite Grey",
-        hexCode: "#999999",
+        "name": "Sao Paulo Yellow",
+        "hexCode": "#FFD400"
       },
       {
-        name: "Mars Red",
-        hexCode: "#7C1022",
+        "name": "Skyscraper Grey Metallic",
+        "hexCode": "#7F848A"
       },
       {
-        name: "Obsidian Black Metallic",
-        hexCode: "#0E0E0E",
+        "name": "Tanzanite Blue II Metallic",
+        "hexCode": "#23346E"
       },
-    ],
+      {
+        "name": "Toronto Red Metallic",
+        "hexCode": "#A3131A"
+      },
+      {
+        "name": "Aventurin Red Metallic",
+        "hexCode": "#611C1E"
+      }
+    ]
+    ,
     displacement: "2,993 cc",
     maxPower: "390 kW",
     torque: "650 Nm",
