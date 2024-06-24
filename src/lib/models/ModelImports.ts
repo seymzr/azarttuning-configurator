@@ -1,5 +1,6 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
+// Lazy load other components
 export const F12 = lazy(() =>
   import("../../components/Scene/Car/f12/Model").then(({ F12 }) => ({
     default: F12,
@@ -51,6 +52,7 @@ export const ZondaCinque = lazy(() =>
   }))
 );
 
+// Lazy load Bmw component with proper typing
 export const Bmw = lazy(() =>
   import("../../components/Scene/Car/g81/Model").then(({ Bmw }) => ({
     default: Bmw,

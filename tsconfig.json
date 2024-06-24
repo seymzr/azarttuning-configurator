@@ -28,6 +28,6 @@
       ]
     }
   },
-  "include": ["src","src/components/Scene/Car/g81/Model.d.ts"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
