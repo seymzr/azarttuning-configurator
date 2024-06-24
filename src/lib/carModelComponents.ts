@@ -25,7 +25,7 @@ export const carModelComponents: {
   Dodge: Viper,
   Lexus: LFA,
   Nissan: GTR,
-  BMW:Bmw,
+  Bmw:Bmw,
   "Mercedes-Benz": SLSAMGBLK,
   Chevrolet: C7ZR1,
   Pagani: ZondaCinque,
