@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -27,6 +28,6 @@
       ]
     }
   },
-  "include": ["src"],
+  "include": ["src","src/components/Scene/Car/g81/Model.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
