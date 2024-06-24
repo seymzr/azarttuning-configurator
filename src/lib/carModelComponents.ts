@@ -9,7 +9,8 @@ import {
   Viper,
   C7ZR1,
   ZondaCinque,
-  Bmw
+  Bmw,
+  S63
 } from "./models/ModelImports";
 import { CarManufacturer } from "./types/types";
 
@@ -26,6 +27,7 @@ export const carModelComponents: {
   Lexus: LFA,
   Nissan: GTR,
   Bmw:Bmw,
+  S63:S63,
   "Mercedes-Benz": SLSAMGBLK,
   Chevrolet: C7ZR1,
   Pagani: ZondaCinque,

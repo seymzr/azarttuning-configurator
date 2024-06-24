@@ -523,6 +523,89 @@ export const cars = [
   {
     logo: mercLogo,
     country: germany,
+    manufacturer: "S63",
+    model: "AMG",
+    year: "2013",
+    sound: slsamgblkSound,
+    colors: [
+      {
+        "name": "Obsidian Black Metallic",
+        "hexCode": "#0E0E0E"
+      },
+      {
+        "name": "Diamond White Metallic",
+        "hexCode": "#E6E6E6"
+      },
+      {
+        "name": "Graphite Grey Metallic",
+        "hexCode": "#4A4A4A"
+      },
+      {
+        "name": "Emerald Green Metallic",
+        "hexCode": "#1B4F3A"
+      },
+      {
+        "name": "Lunar Blue Metallic",
+        "hexCode": "#2E3A67"
+      },
+      {
+        "name": "Anthracite Blue Metallic",
+        "hexCode": "#3C4B57"
+      },
+      {
+        "name": "Mojave Silver Metallic",
+        "hexCode": "#7A7A7A"
+      },
+      {
+        "name": "Selenite Grey Metallic",
+        "hexCode": "#747678"
+      },
+      {
+        "name": "Brilliant Blue Metallic",
+        "hexCode": "#1F63A6"
+      },
+      {
+        "name": "Rubellite Red Metallic",
+        "hexCode": "#7E2A33"
+      },
+      {
+        "name": "Designo Diamond White Bright",
+        "hexCode": "#F2F2F2"
+      },
+      {
+        "name": "Designo Cashmere White Magno",
+        "hexCode": "#D9D7CE"
+      },
+      {
+        "name": "Designo Selenite Grey Magno",
+        "hexCode": "#7D7D7D"
+      },
+      {
+        "name": "Designo Graphite Grey Magno",
+        "hexCode": "#565657"
+      }
+    ]
+    ,
+    displacement: "6,208 cc",
+    maxPower: "622 BHP",
+    torque: "468 lb-ft",
+    drivetrain: "RWD",
+    length: "4,638 mm",
+    width: "1,966 mm",
+    height: "1,260 mm",
+    weight: "1,550 kg",
+    description: `The Mercedes-Benz SLS Black Series was revealed in the Los Angeles Auto Show in 2012, and while the 
+    base SLS already boasted impressive performance credentials, this road-legal race car commands attention with its formidable 
+    presence and unmatched performance. With 39 more horsepower, it is now able to put out 622 BHP. Adorned in sleek 
+    lines and sculpted curves, this piece of German automotive engineering epitomizes the marriage of power and elegance. 
+    Its handcrafted V8 engine roars to life with a symphony of raw power, capable of propelling up to 196mph. With 
+    precise handling and aerodynamic prowess, every twist and turn of the track becomes a thrilling dance between man 
+    and machine. The SLS Black Series embodies the essence of racing excellence, inviting drivers to experience the 
+    adrenaline-fueled rush of pure driving ecstasy.`,
+  },
+  {
+    logo: mercLogo,
+    country: germany,
     manufacturer: "Mercedes-Benz",
     model: "SLS AMG Black Series",
     year: "2013",

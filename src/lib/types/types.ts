@@ -7,6 +7,7 @@ export type CarManufacturer =
   | "Lexus"
   | "Nissan"
   | "Bmw"
+  | "S63"
   | "Mercedes-Benz"
   | "Chevrolet"
   | "Pagani";

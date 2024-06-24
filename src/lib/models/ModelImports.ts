@@ -58,6 +58,11 @@ export const Bmw = lazy(() =>
     default: Bmw,
   }))
 );
+export const S63 = lazy(() =>
+  import("../../components/Scene/Car/S63/Model").then(({ S63 }) => ({
+    default: S63,
+  }))
+);
 export const SpotlightProp = lazy(() =>
   import("../../components/Scene/Floor/Spotlight").then(({ SpotlightProp }) => ({
     default: SpotlightProp,
