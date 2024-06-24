@@ -76,7 +76,10 @@ export const cars = [
         hexCode: "#760702",
       },
     ],
-    displacement: "6,162 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "6,162 cc",
     maxPower: "755 BHP",
     torque: "715 lb-ft",
     drivetrain: "RWD",
@@ -136,7 +139,10 @@ export const cars = [
         hexCode: "#F5DF00",
       },
     ],
-    displacement: "8,382 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "8,382 cc",
     maxPower: "640 BHP",
     torque: "600 lb-ft",
     drivetrain: "RWD",
@@ -239,7 +245,10 @@ export const cars = [
         hexCode: "#B00000",
       },
     ],
-    displacement: "6,262 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "6,262 cc",
     maxPower: "730 BHP",
     torque: "509 lb-ft",
     drivetrain: "RWD",
@@ -311,7 +320,10 @@ export const cars = [
         hexCode: "#B28600",
       },
     ],
-    displacement: "5,163 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "5,163 cc",
     maxPower: "526 BHP",
     torque: "429 lb-ft",
     drivetrain: "RWD",
@@ -406,7 +418,10 @@ export const cars = [
         hexCode: "#6BB716",
       },
     ],
-    displacement: "5,204 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "5,204 cc",
     maxPower: "602 BHP",
     torque: "413 lb-ft",
     drivetrain: "AWD",
@@ -486,7 +501,10 @@ export const cars = [
         hexCode: "#EBF0F4",
       },
     ],
-    displacement: "4,805 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "4,805 cc",
     maxPower: "552 BHP",
     torque: "354 lb-ft",
     drivetrain: "RWD",
@@ -586,7 +604,10 @@ export const cars = [
       }
     ]
     ,
-    displacement: "6,208 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "6,208 cc",
     maxPower: "622 BHP",
     torque: "468 lb-ft",
     drivetrain: "RWD",
@@ -640,7 +661,10 @@ export const cars = [
         hexCode: "#0E0E0E",
       },
     ],
-    displacement: "6,208 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "6,208 cc",
     maxPower: "622 BHP",
     torque: "468 lb-ft",
     drivetrain: "RWD",
@@ -708,7 +732,11 @@ export const cars = [
       }
     ]
     ,
-    displacement: "2,993 cc",
+  
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "2,993 cc",
     maxPower: "390 kW",
     torque: "650 Nm",
     drivetrain: "RWD",
@@ -755,7 +783,10 @@ export const cars = [
         hexCode: "#620000",
       },
     ],
-    displacement: "3,799 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "3,799 cc",
     maxPower: "565 BHP",
     torque: "467 lb-ft",
     drivetrain: "4WD",
@@ -818,7 +849,10 @@ export const cars = [
         hexCode: "#EFEFEF",
       },
     ],
-    displacement: "7,291 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "7,291 cc",
     maxPower: "678 BHP",
     torque: "575 lb-ft",
     drivetrain: "RWD",
@@ -868,7 +902,10 @@ export const cars = [
         hexCode: "#BDBFB6",
       },
     ],
-    displacement: "3,996 cc",
+    wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement: "3,996 cc",
     maxPower: "491 BHP",
     torque: "340 lb-ft",
     drivetrain: "RWD",
@@ -892,7 +929,10 @@ export const cars = [
     higher and is larger. Behind the front fenders are air outlets for drawing 
     air out from under the car. As a result, the downforce is more than double 
     that of a standard 911. The engine takes the 3.8-litre engine of the GT3 and
-     extends its stroke, making it 4.0 litres in displacement. The tuned engine 
+     extends its stroke, making it 4.0 litres in wheels:[
+      {name:"Factory"},
+      {name:"Michelin Sport"}
+    ],displacement. The tuned engine 
      now produces 24 BHP / 2.0 kgfm more, at 493 BHP / 46.9 kgfm. And the 
      dampers, springs and stabilisers for both the front and rear have been 
      newly developed for this car. As a result, the car lapped the Nürburgring 

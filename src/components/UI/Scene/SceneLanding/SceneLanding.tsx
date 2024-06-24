@@ -5,11 +5,13 @@ import "./SceneLanding.css";
 import SceneLandingHeader from "./SceneLandingHeader/SceneLandingHeader";
 import SceneLandingCarSelection from "./SceneLandingMenu/SceneLandingCarSelection/SceneLandingCarSelection";
 import SceneLandingPaintSelection from "./SceneLandingMenu/SceneLandingPaintSelection/SceneLandingPaintSelection";
+import SceneLandingWheelSelection from "./SceneLandingMenu/SceneLandingWheelSelection/SceneLandingWheelSelection";
 
 const SceneLanding = () => {
   const {
     isInCarSelection,
     isInPaintSelection,
+    isInWheelSelection,
     isUIVisible,
     setIsInShowcaseMenu,
     toggleUI,
@@ -28,7 +30,8 @@ const SceneLanding = () => {
       <div className="scene-landing-menu">
         {!isInPaintSelection && <SceneLandingCarSelection />}
         {!isInCarSelection && <SceneLandingPaintSelection />}
-        {!isInCarSelection && !isInPaintSelection && (
+        {<SceneLandingWheelSelection />}
+        {!isInCarSelection && !isInPaintSelection  && (
           <button className="ui-btn" onClick={() => UIHandler()}>
             <BiSolidDetail color={iconColor} size={iconSize} />
           </button>

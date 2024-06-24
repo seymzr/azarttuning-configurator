@@ -64,7 +64,9 @@ export function C7ZR1(props: any) {
       material[1].needsUpdate = true;
     });
   }, [materials, props]);
-
+  useEffect(()=>{
+    console.log(props.wheels)
+  },[props])
 
   return (
     <group {...props} dispose={null} scale={4} position={[0, -1.47, 0]}>

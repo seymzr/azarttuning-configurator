@@ -12,6 +12,9 @@ type UITypes = {
   isInPaintSelection: boolean;
   setIsInPaintSelection: (isInPaintSelection: boolean) => void;
   togglePaintSelection: () => void;
+  isInWheelSelection: boolean;
+  setIsInWheelSelection: (isInWheelSelection: boolean) => void;
+  toggleWheelSelection: () => void;
   isInCarSelection: boolean;
   setIsInCarSelection: (isInCarSelection: boolean) => void;
   toggleCarSelection: () => void;
@@ -29,6 +32,9 @@ export const useUIStore = create<UITypes>()((set) => ({
   isInPaintSelection: false,
   setIsInPaintSelection: (isInPaintSelection: boolean) => set({ isInPaintSelection }),
   togglePaintSelection: () => set((state) => ({ isInPaintSelection: !state.isInPaintSelection})),
+  isInWheelSelection: false,
+  setIsInWheelSelection: (isInWheelSelection: boolean) => set({ isInWheelSelection }),
+  toggleWheelSelection: () => set((state) => ({ isInWheelSelection: !state.isInWheelSelection})),
   isInCarSelection: false,
   setIsInCarSelection: () => set((state) => ({ isInCarSelection: !state.isInCarSelection})),
   toggleCarSelection: () => set((state) => ({ isInCarSelection: !state.isInCarSelection})),

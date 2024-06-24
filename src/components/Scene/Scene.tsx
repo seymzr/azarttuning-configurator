@@ -11,6 +11,7 @@ import { carModelComponents } from "../../lib/carModelComponents";
 import { maxDistance } from "../../lib/constants/constants";
 import { CarManufacturer } from "../../lib/types/types";
 import { useCarColorStore } from "../../lib/zustandstores/carColorStore";
+import { useCarWheelStore } from "../../lib/zustandstores/carWheelStore";
 import { useFloorStateStore } from "../../lib/zustandstores/floorStore";
 import { useLoadingStateStore } from "../../lib/zustandstores/loadingStore";
 import { useSelectedCarStore } from "../../lib/zustandstores/selectedCarStore";
@@ -25,6 +26,8 @@ import Floor from "./Floor/Floor";
 const Scene = () => {
   const { isInShowcaseMenu } = useUIStore();
   const { color, setColor } = useCarColorStore();
+  const { wheels, setWheel } = useCarWheelStore();
+
   const { isLoading, setIsLoading, isModelReady, setIsModelReady } = useLoadingStateStore();
   const { isFloorVisible, setIsFloorVisible } = useFloorStateStore();
   const { selectedCar, setSelectedCar } = useSelectedCarStore();
@@ -55,6 +58,9 @@ const Scene = () => {
     setSelectedCar(selectedCar);
 
     if (selectedCar.colors.length > 0) {
+      setColor(selectedCar.colors[0]);
+    }
+    if (selectedCar.wheels.length > 0) {
       setColor(selectedCar.colors[0]);
     }
 
@@ -110,7 +116,7 @@ const Scene = () => {
             <>
               {CarModelComponent && (
                 <Suspense fallback={<LoadingSpinner />}>
-                  <CarModelComponent color={color} />
+                  <CarModelComponent color={color} wheels={wheels} />
                   {selectedCar.sound && (
                     <PositionalAudio
                       ref={audioRef}

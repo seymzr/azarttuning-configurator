@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { cars } from "../cars";
 import { CarColorProps } from "../types/types";
+import { CarWheelProps } from "../types/types";
 
 type SelectedCarProps = {
   logo: string;
@@ -10,6 +11,7 @@ type SelectedCarProps = {
   year: string;
   sound?: string;
   colors: CarColorProps[];
+  wheels: CarWheelProps[];
   displacement: string;
   maxPower: string;
   torque: string;
@@ -34,6 +36,7 @@ export const useSelectedCarStore = create<{
     year: car1.year,
     sound: car1.sound,
     colors: car1.colors,
+    wheels:car1.wheels,
     displacement: car1.displacement,
     maxPower: car1.maxPower,
     torque: car1.torque,

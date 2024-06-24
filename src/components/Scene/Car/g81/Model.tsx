@@ -665,38 +665,175 @@ export function Bmw(props: any) {
     materials.body.roughness = 0
     materials.body.metalness = 0.1
   }, [materials, props]);
+  useEffect(()=>{
+
+  },[props])
   return (
     <group {...props} dispose={null}>
       <group name="Sketchfab_model002" scale={3.7} rotation={[-Math.PI/2,0,Math.PI]} position={[0.5, -2.2, 0]}>
         <group name="m3_tourningfbx002" rotation={[-Math.PI / 2, 0, -Math.PI]} scale={0.01}>
-          <group name="3_Wheel001" position={[-78.666, 38.904, -146.315]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={-90.294}>
-            <mesh name="3_Wheel003_amdb11_brake002_0002" geometry={nodes['3_Wheel003_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
-            <mesh name="3_Wheel003_amdb11_caliper002_0002" geometry={nodes['3_Wheel003_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
-            <mesh name="3_Wheel003_amdb11_misc002_0002" geometry={nodes['3_Wheel003_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
-            <mesh name="3_Wheel003_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel003_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
-            <mesh name="3_Wheel003_Scene_-_Root002_0002" geometry={nodes['3_Wheel003_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
-          </group>
-          <group name="3_Wheel002" position={[-78.666, 38.904, 140.686]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={-90.294}>
-            <mesh name="3_Wheel002_amdb11_brake002_0002" geometry={nodes['3_Wheel002_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
-            <mesh name="3_Wheel002_amdb11_caliper002_0002" geometry={nodes['3_Wheel002_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
-            <mesh name="3_Wheel002_amdb11_misc002_0002" geometry={nodes['3_Wheel002_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
-            <mesh name="3_Wheel002_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel002_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
-            <mesh name="3_Wheel002_Scene_-_Root002_0002" geometry={nodes['3_Wheel002_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
-          </group>
-          <group name="3_Wheel003" position={[79.042, 38.904, -146.315]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={90.294}>
-            <mesh name="3_Wheel001_amdb11_brake002_0002" geometry={nodes['3_Wheel001_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
-            <mesh name="3_Wheel001_amdb11_caliper002_0002" geometry={nodes['3_Wheel001_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
-            <mesh name="3_Wheel001_amdb11_misc002_0002" geometry={nodes['3_Wheel001_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
-            <mesh name="3_Wheel001_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel001_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
-            <mesh name="3_Wheel001_Scene_-_Root002_0002" geometry={nodes['3_Wheel001_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
-          </group>
-          <group name="3_Wheel008" position={[79.042, 38.904, 140.686]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={90.294}>
-            <mesh name="3_Wheel_amdb11_brake002_0002" geometry={nodes['3_Wheel_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
-            <mesh name="3_Wheel_amdb11_caliper002_0002" geometry={nodes['3_Wheel_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
-            <mesh name="3_Wheel_amdb11_misc002_0002" geometry={nodes['3_Wheel_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
-            <mesh name="3_Wheel_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
-            <mesh name="3_Wheel_Scene_-_Root002_0002" geometry={nodes['3_Wheel_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
-          </group>
+          {(props?.wheels?.name=="Factory")&& <group name='Factory rims'>
+
+<group name="3_Wheel001" position={[-78.666, 38.904, -146.315]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={-90.294}>
+  <mesh name="3_Wheel003_amdb11_brake002_0002" geometry={nodes['3_Wheel003_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
+  <mesh name="3_Wheel003_amdb11_caliper002_0002" geometry={nodes['3_Wheel003_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
+  <mesh name="3_Wheel003_amdb11_misc002_0002" geometry={nodes['3_Wheel003_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
+  <mesh name="3_Wheel003_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel003_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
+  <mesh name="3_Wheel003_Scene_-_Root002_0002" geometry={nodes['3_Wheel003_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
+</group>
+<group name="3_Wheel002" position={[-78.666, 38.904, 140.686]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={-90.294}>
+  <mesh name="3_Wheel002_amdb11_brake002_0002" geometry={nodes['3_Wheel002_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
+  <mesh name="3_Wheel002_amdb11_caliper002_0002" geometry={nodes['3_Wheel002_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
+  <mesh name="3_Wheel002_amdb11_misc002_0002" geometry={nodes['3_Wheel002_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
+  <mesh name="3_Wheel002_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel002_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
+  <mesh name="3_Wheel002_Scene_-_Root002_0002" geometry={nodes['3_Wheel002_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
+</group>
+<group name="3_Wheel003" position={[79.042, 38.904, -146.315]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={90.294}>
+  <mesh name="3_Wheel001_amdb11_brake002_0002" geometry={nodes['3_Wheel001_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
+  <mesh name="3_Wheel001_amdb11_caliper002_0002" geometry={nodes['3_Wheel001_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
+  <mesh name="3_Wheel001_amdb11_misc002_0002" geometry={nodes['3_Wheel001_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
+  <mesh name="3_Wheel001_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel001_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
+  <mesh name="3_Wheel001_Scene_-_Root002_0002" geometry={nodes['3_Wheel001_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
+</group>
+<group name="3_Wheel008" position={[79.042, 38.904, 140.686]} rotation={[-Math.PI / 2, 0, Math.PI / 2]} scale={90.294}>
+  <mesh name="3_Wheel_amdb11_brake002_0002" geometry={nodes['3_Wheel_amdb11_brake002_0002'].geometry} material={materials['amdb11_brake.001']} />
+  <mesh name="3_Wheel_amdb11_caliper002_0002" geometry={nodes['3_Wheel_amdb11_caliper002_0002'].geometry} material={materials['amdb11_caliper.001']} />
+  <mesh name="3_Wheel_amdb11_misc002_0002" geometry={nodes['3_Wheel_amdb11_misc002_0002'].geometry} material={materials['amdb11_misc.001']} />
+  <mesh name="3_Wheel_amdb11_misc_chrome002_0002" geometry={nodes['3_Wheel_amdb11_misc_chrome002_0002'].geometry} material={materials['amdb11_misc_chrome.001']} />
+  <mesh name="3_Wheel_Scene_-_Root002_0002" geometry={nodes['3_Wheel_Scene_-_Root002_0002'].geometry} material={materials['Scene_-_Root.001']} />
+</group>
+<group name="m3g81law_rim_04_R20001" position={[-78.618, 38.904, -146.315]} rotation={[Math.PI / 2, 0, 0]} scale={-99.244}>
+  <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
+  <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
+  <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
+  <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
+</group>
+<group name="m3g81law_rim_04_R20002" position={[-78.618, 38.904, 140.686]} rotation={[Math.PI / 2, 0, 0]} scale={-99.244}>
+  <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
+  <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
+  <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
+  <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
+</group>
+<group name="m3g81law_rim_04_R20003" position={[78.994, 38.904, -146.315]} rotation={[-Math.PI / 2, 0, 0]} scale={99.244}>
+  <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
+  <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
+  <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
+  <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
+</group>
+<group name="m3g81law_rim_04_R20008" position={[78.994, 38.904, 140.686]} rotation={[-Math.PI / 2, 0, 0]} scale={99.244}>
+  <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
+  <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
+  <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
+  <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
+</group>
+
+          </group>}
+          {props?.wheels?.name=='Michelin Sport'&&<group name='Michelin Sports' >
+                <group name="Michelin_Pilot_Sport_4_Tire" position={[1.016, 0.252, -1.139]} scale={0.765}>
+                <mesh name="Airstem" geometry={nodes.Airstem.geometry} material={materials.Rubber} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
+                <mesh name="Bolt" geometry={nodes.Bolt.geometry} material={materials.Metal_rough} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt001" geometry={nodes.Bolt001.geometry} material={materials.Metal_rough} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt002" geometry={nodes.Bolt002.geometry} material={materials.Metal_rough} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt003" geometry={nodes.Bolt003.geometry} material={materials.Metal_rough} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt004" geometry={nodes.Bolt004.geometry} material={materials.Metal_rough} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <group name="Brake_rotor" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
+                <mesh name="Circle020" geometry={nodes.Circle020.geometry} material={materials['Brushed steel']} />
+                <mesh name="Circle020_1" geometry={nodes.Circle020_1.geometry} material={materials.Metal_rough} />
+                </group>
+                <group name="Calipers" position={[0.049, 0, 0]} scale={0.925}>
+                <mesh name="Plane081" geometry={nodes.Plane081.geometry} material={materials.Callipers} />
+                <mesh name="Plane081_1" geometry={nodes.Plane081_1.geometry} material={materials['Callipers.002']} />
+                </group>
+                <mesh name="Logo" geometry={nodes.Logo.geometry} material={materials['Rim Paint']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
+                <group name="Rim" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle018" geometry={nodes.Circle018.geometry} material={materials.Metal_rough} />
+                <mesh name="Circle018_1" geometry={nodes.Circle018_1.geometry} material={materials['Rim Paint']} />
+                </group>
+                <group name="The_Rim" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle004" geometry={nodes.Circle004.geometry} material={materials['Rim Paint']} />
+                <mesh name="Circle004_1" geometry={nodes.Circle004_1.geometry} material={materials.Rubber} />
+                </group>
+                <mesh name="Tires" geometry={nodes.Tires.geometry} material={materials['Material.002']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
+                </group>
+                <group name="Michelin_Pilot_Sport_4_Tire001" position={[-0.11, 0.252, -1.139]} rotation={[Math.PI, 0, Math.PI]} scale={0.765}>
+                <mesh name="Airstem001" geometry={nodes.Airstem001.geometry} material={materials['Rubber.001']} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
+                <mesh name="Bolt005" geometry={nodes.Bolt005.geometry} material={materials['Metal_rough.001']} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt006" geometry={nodes.Bolt006.geometry} material={materials['Metal_rough.001']} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt007" geometry={nodes.Bolt007.geometry} material={materials['Metal_rough.001']} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt008" geometry={nodes.Bolt008.geometry} material={materials['Metal_rough.001']} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt009" geometry={nodes.Bolt009.geometry} material={materials['Metal_rough.001']} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <group name="Brake_rotor001" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
+                <mesh name="Circle007" geometry={nodes.Circle007.geometry} material={materials['Brushed steel.001']} />
+                <mesh name="Circle007_1" geometry={nodes.Circle007_1.geometry} material={materials['Metal_rough.001']} />
+                </group>
+                <group name="Calipers001" position={[0.049, 0, 0]} scale={0.925}>
+                <mesh name="Plane011" geometry={nodes.Plane011.geometry} material={materials['Callipers.001']} />
+                <mesh name="Plane011_1" geometry={nodes.Plane011_1.geometry} material={materials['Callipers.001']} />
+                </group>
+                <mesh name="Logo001" geometry={nodes.Logo001.geometry} material={materials['Rim Paint.001']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
+                <group name="Rim001" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle002" geometry={nodes.Circle002.geometry} material={materials['Metal_rough.001']} />
+                <mesh name="Circle002_1" geometry={nodes.Circle002_1.geometry} material={materials['Rim Paint.001']} />
+                </group>
+                <group name="The_Rim001" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle001" geometry={nodes.Circle001.geometry} material={materials['Rim Paint.001']} />
+                <mesh name="Circle001_1" geometry={nodes.Circle001_1.geometry} material={materials['Rubber.001']} />
+                </group>
+                <mesh name="Tires001" geometry={nodes.Tires001.geometry} material={materials['Material.003']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
+                </group>
+                <group name="Michelin_Pilot_Sport_4_Tire002" position={[-0.11, 0.252, 0.903]} rotation={[Math.PI, 0, Math.PI]} scale={0.765}>
+                <mesh name="Airstem002" geometry={nodes.Airstem002.geometry} material={materials['Rubber.002']} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
+                <mesh name="Bolt010" geometry={nodes.Bolt010.geometry} material={materials['Metal_rough.002']} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt011" geometry={nodes.Bolt011.geometry} material={materials['Metal_rough.002']} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt012" geometry={nodes.Bolt012.geometry} material={materials['Metal_rough.002']} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt013" geometry={nodes.Bolt013.geometry} material={materials['Metal_rough.002']} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt014" geometry={nodes.Bolt014.geometry} material={materials['Metal_rough.002']} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <group name="Brake_rotor002" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
+                <mesh name="Circle012" geometry={nodes.Circle012.geometry} material={materials['Brushed steel.002']} />
+                <mesh name="Circle012_1" geometry={nodes.Circle012_1.geometry} material={materials['Metal_rough.002']} />
+                </group>
+                <group name="Calipers002" position={[0.049, 0, 0]} scale={0.925}>
+                <mesh name="Plane013" geometry={nodes.Plane013.geometry} material={materials['Callipers.002']} />
+                <mesh name="Plane013_1" geometry={nodes.Plane013_1.geometry} material={materials['Callipers.001']} />
+                </group>
+                <mesh name="Logo002" geometry={nodes.Logo002.geometry} material={materials['Rim Paint.002']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
+                <group name="Rim002" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle010" geometry={nodes.Circle010.geometry} material={materials['Metal_rough.002']} />
+                <mesh name="Circle010_1" geometry={nodes.Circle010_1.geometry} material={materials['Rim Paint.002']} />
+                </group>
+                <group name="The_Rim002" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle009" geometry={nodes.Circle009.geometry} material={materials['Rim Paint.002']} />
+                <mesh name="Circle009_1" geometry={nodes.Circle009_1.geometry} material={materials['Rubber.002']} />
+                </group>
+                <mesh name="Tires002" geometry={nodes.Tires002.geometry} material={materials['Material.004']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
+                </group>
+                <group name="Michelin_Pilot_Sport_4_Tire003" position={[1.016, 0.252, 0.904]} scale={0.765}>
+                <mesh name="Airstem003" geometry={nodes.Airstem003.geometry} material={materials['Rubber.003']} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
+                <mesh name="Bolt015" geometry={nodes.Bolt015.geometry} material={materials['Metal_rough.003']} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt016" geometry={nodes.Bolt016.geometry} material={materials['Metal_rough.003']} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt017" geometry={nodes.Bolt017.geometry} material={materials['Metal_rough.003']} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt018" geometry={nodes.Bolt018.geometry} material={materials['Metal_rough.003']} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <mesh name="Bolt019" geometry={nodes.Bolt019.geometry} material={materials['Metal_rough.003']} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
+                <group name="Brake_rotor003" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
+                <mesh name="Circle017" geometry={nodes.Circle017.geometry} material={materials['Brushed steel.003']} />
+                <mesh name="Circle017_1" geometry={nodes.Circle017_1.geometry} material={materials['Metal_rough.003']} />
+                </group>
+                <group name="Calipers003" position={[0.049, 0, 0]} scale={0.925}>
+                <mesh name="Plane015" geometry={nodes.Plane015.geometry} material={materials['Callipers.003']} />
+                <mesh name="Plane015_1" geometry={nodes.Plane015_1.geometry} material={materials['Callipers.003']} />
+                </group>
+                <mesh name="Logo003" geometry={nodes.Logo003.geometry} material={materials['Rim Paint.003']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
+                <group name="Rim003" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle015" geometry={nodes.Circle015.geometry} material={materials['Metal_rough.003']} />
+                <mesh name="Circle015_1" geometry={nodes.Circle015_1.geometry} material={materials['Rim Paint.003']} />
+                </group>
+                <group name="The_Rim003" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
+                <mesh name="Circle014" geometry={nodes.Circle014.geometry} material={materials['Rim Paint.003']} />
+                <mesh name="Circle014_1" geometry={nodes.Circle014_1.geometry} material={materials['Rubber.003']} />
+                </group>
+                <mesh name="Tires003" geometry={nodes.Tires003.geometry} material={materials['Material.005']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
+                </group>
+          </group>}
           <group name="m3g80law_diffuser_a002" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
             <mesh name="m3g80law_diffuser_a_m3g81law_Carbon_ext_0002" geometry={nodes.m3g80law_diffuser_a_m3g81law_Carbon_ext_0002.geometry} material={materials['m3g81law_Carbon_ext.001']} />
             <mesh name="m3g80law_diffuser_a_m3g81law_Coloured_gloss_0002" geometry={nodes.m3g80law_diffuser_a_m3g81law_Coloured_gloss_0002.geometry} material={materials['m3g81law_Coloured_gloss.001']} />
@@ -1095,30 +1232,7 @@ export function Bmw(props: any) {
             <mesh name="m3g81law_radiator_m3g81law_Grille1_0002" geometry={nodes.m3g81law_radiator_m3g81law_Grille1_0002.geometry} material={materials['m3g81law_Grille1.002']} />
             <mesh name="m3g81law_radiator_m3g81law_mechanical_detail_0002" geometry={nodes.m3g81law_radiator_m3g81law_mechanical_detail_0002.geometry} material={materials['m3g81law_mechanical_detail.003']} />
           </group>
-          <group name="m3g81law_rim_04_R20001" position={[-78.618, 38.904, -146.315]} rotation={[Math.PI / 2, 0, 0]} scale={-99.244}>
-            <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
-            <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
-            <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
-            <mesh name="m3g81law_rim_04_R20003_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20003_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
-          </group>
-          <group name="m3g81law_rim_04_R20002" position={[-78.618, 38.904, 140.686]} rotation={[Math.PI / 2, 0, 0]} scale={-99.244}>
-            <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
-            <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
-            <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
-            <mesh name="m3g81law_rim_04_R20002_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20002_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
-          </group>
-          <group name="m3g81law_rim_04_R20003" position={[78.994, 38.904, -146.315]} rotation={[-Math.PI / 2, 0, 0]} scale={99.244}>
-            <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
-            <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
-            <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
-            <mesh name="m3g81law_rim_04_R20001_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20001_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
-          </group>
-          <group name="m3g81law_rim_04_R20008" position={[78.994, 38.904, 140.686]} rotation={[-Math.PI / 2, 0, 0]} scale={99.244}>
-            <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Badge_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Badge_0002.geometry} material={materials['m3g81law_Wheel1A_Badge.001']} />
-            <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Rim_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Rim_0002.geometry} material={materials['m3g81law_Wheel1A_Rim.001']} />
-            <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Screws_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Screws_0002.geometry} material={materials['m3g81law_Wheel1A_Screws.001']} />
-            <mesh name="m3g81law_rim_04_R20_m3g81law_Wheel1A_Vent_0002" geometry={nodes.m3g81law_rim_04_R20_m3g81law_Wheel1A_Vent_0002.geometry} material={materials['m3g81law_Wheel1A_Vent.001']} />
-          </group>
+         
           <group name="m3g81law_seat_FL002" rotation={[-Math.PI / 2, 0, 0]} scale={100}>
             <mesh name="m3g81law_seat_FL_m3g81law_Carbon_int_0002" geometry={nodes.m3g81law_seat_FL_m3g81law_Carbon_int_0002.geometry} material={materials['m3g81law_Carbon_int.001']} />
             <mesh name="m3g81law_seat_FL_m3g81law_Grille6_0002" geometry={nodes.m3g81law_seat_FL_m3g81law_Grille6_0002.geometry} material={materials['m3g81law_Grille6.001']} />
@@ -1289,110 +1403,7 @@ export function Bmw(props: any) {
           <mesh name="m3g81law_wipers_m3g81law_Coloured_matte_0002" geometry={nodes.m3g81law_wipers_m3g81law_Coloured_matte_0002.geometry} material={materials['m3g81law_Coloured_matte.001']} rotation={[-Math.PI / 2, 0, 0]} scale={100} />
         </group>
       </group>
-      {/* <group name="Michelin_Pilot_Sport_4_Tire" position={[1.016, 0.252, -1.139]} scale={0.765}>
-        <mesh name="Airstem" geometry={nodes.Airstem.geometry} material={materials.Rubber} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
-        <mesh name="Bolt" geometry={nodes.Bolt.geometry} material={materials.Metal_rough} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt001" geometry={nodes.Bolt001.geometry} material={materials.Metal_rough} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt002" geometry={nodes.Bolt002.geometry} material={materials.Metal_rough} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt003" geometry={nodes.Bolt003.geometry} material={materials.Metal_rough} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt004" geometry={nodes.Bolt004.geometry} material={materials.Metal_rough} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <group name="Brake_rotor" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
-          <mesh name="Circle020" geometry={nodes.Circle020.geometry} material={materials['Brushed steel']} />
-          <mesh name="Circle020_1" geometry={nodes.Circle020_1.geometry} material={materials.Metal_rough} />
-        </group>
-        <group name="Calipers" position={[0.049, 0, 0]} scale={0.925}>
-          <mesh name="Plane081" geometry={nodes.Plane081.geometry} material={materials.Callipers} />
-          <mesh name="Plane081_1" geometry={nodes.Plane081_1.geometry} material={materials['Callipers.002']} />
-        </group>
-        <mesh name="Logo" geometry={nodes.Logo.geometry} material={materials['Rim Paint']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
-        <group name="Rim" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle018" geometry={nodes.Circle018.geometry} material={materials.Metal_rough} />
-          <mesh name="Circle018_1" geometry={nodes.Circle018_1.geometry} material={materials['Rim Paint']} />
-        </group>
-        <group name="The_Rim" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle004" geometry={nodes.Circle004.geometry} material={materials['Rim Paint']} />
-          <mesh name="Circle004_1" geometry={nodes.Circle004_1.geometry} material={materials.Rubber} />
-        </group>
-        <mesh name="Tires" geometry={nodes.Tires.geometry} material={materials['Material.002']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
-      </group>
-      <group name="Michelin_Pilot_Sport_4_Tire001" position={[-0.11, 0.252, -1.139]} rotation={[Math.PI, 0, Math.PI]} scale={0.765}>
-        <mesh name="Airstem001" geometry={nodes.Airstem001.geometry} material={materials['Rubber.001']} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
-        <mesh name="Bolt005" geometry={nodes.Bolt005.geometry} material={materials['Metal_rough.001']} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt006" geometry={nodes.Bolt006.geometry} material={materials['Metal_rough.001']} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt007" geometry={nodes.Bolt007.geometry} material={materials['Metal_rough.001']} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt008" geometry={nodes.Bolt008.geometry} material={materials['Metal_rough.001']} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt009" geometry={nodes.Bolt009.geometry} material={materials['Metal_rough.001']} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <group name="Brake_rotor001" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
-          <mesh name="Circle007" geometry={nodes.Circle007.geometry} material={materials['Brushed steel.001']} />
-          <mesh name="Circle007_1" geometry={nodes.Circle007_1.geometry} material={materials['Metal_rough.001']} />
-        </group>
-        <group name="Calipers001" position={[0.049, 0, 0]} scale={0.925}>
-          <mesh name="Plane011" geometry={nodes.Plane011.geometry} material={materials['Callipers.001']} />
-          <mesh name="Plane011_1" geometry={nodes.Plane011_1.geometry} material={materials['Callipers.001']} />
-        </group>
-        <mesh name="Logo001" geometry={nodes.Logo001.geometry} material={materials['Rim Paint.001']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
-        <group name="Rim001" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle002" geometry={nodes.Circle002.geometry} material={materials['Metal_rough.001']} />
-          <mesh name="Circle002_1" geometry={nodes.Circle002_1.geometry} material={materials['Rim Paint.001']} />
-        </group>
-        <group name="The_Rim001" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle001" geometry={nodes.Circle001.geometry} material={materials['Rim Paint.001']} />
-          <mesh name="Circle001_1" geometry={nodes.Circle001_1.geometry} material={materials['Rubber.001']} />
-        </group>
-        <mesh name="Tires001" geometry={nodes.Tires001.geometry} material={materials['Material.003']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
-      </group>
-      <group name="Michelin_Pilot_Sport_4_Tire002" position={[-0.11, 0.252, 0.903]} rotation={[Math.PI, 0, Math.PI]} scale={0.765}>
-        <mesh name="Airstem002" geometry={nodes.Airstem002.geometry} material={materials['Rubber.002']} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
-        <mesh name="Bolt010" geometry={nodes.Bolt010.geometry} material={materials['Metal_rough.002']} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt011" geometry={nodes.Bolt011.geometry} material={materials['Metal_rough.002']} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt012" geometry={nodes.Bolt012.geometry} material={materials['Metal_rough.002']} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt013" geometry={nodes.Bolt013.geometry} material={materials['Metal_rough.002']} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt014" geometry={nodes.Bolt014.geometry} material={materials['Metal_rough.002']} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <group name="Brake_rotor002" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
-          <mesh name="Circle012" geometry={nodes.Circle012.geometry} material={materials['Brushed steel.002']} />
-          <mesh name="Circle012_1" geometry={nodes.Circle012_1.geometry} material={materials['Metal_rough.002']} />
-        </group>
-        <group name="Calipers002" position={[0.049, 0, 0]} scale={0.925}>
-          <mesh name="Plane013" geometry={nodes.Plane013.geometry} material={materials['Callipers.002']} />
-          <mesh name="Plane013_1" geometry={nodes.Plane013_1.geometry} material={materials['Callipers.001']} />
-        </group>
-        <mesh name="Logo002" geometry={nodes.Logo002.geometry} material={materials['Rim Paint.002']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
-        <group name="Rim002" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle010" geometry={nodes.Circle010.geometry} material={materials['Metal_rough.002']} />
-          <mesh name="Circle010_1" geometry={nodes.Circle010_1.geometry} material={materials['Rim Paint.002']} />
-        </group>
-        <group name="The_Rim002" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle009" geometry={nodes.Circle009.geometry} material={materials['Rim Paint.002']} />
-          <mesh name="Circle009_1" geometry={nodes.Circle009_1.geometry} material={materials['Rubber.002']} />
-        </group>
-        <mesh name="Tires002" geometry={nodes.Tires002.geometry} material={materials['Material.004']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
-      </group>
-      <group name="Michelin_Pilot_Sport_4_Tire003" position={[1.016, 0.252, 0.904]} scale={0.765}>
-        <mesh name="Airstem003" geometry={nodes.Airstem003.geometry} material={materials['Rubber.003']} position={[0.124, 0.225, 0]} rotation={[3.074, 0.001, -0.883]} scale={0.002} />
-        <mesh name="Bolt015" geometry={nodes.Bolt015.geometry} material={materials['Metal_rough.003']} position={[0.092, -0.017, -0.054]} rotation={[1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt016" geometry={nodes.Bolt016.geometry} material={materials['Metal_rough.003']} position={[0.092, 0.046, -0.033]} rotation={[2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt017" geometry={nodes.Bolt017.geometry} material={materials['Metal_rough.003']} position={[0.092, 0.046, 0.033]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt018" geometry={nodes.Bolt018.geometry} material={materials['Metal_rough.003']} position={[0.092, -0.017, 0.054]} rotation={[-1.257, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <mesh name="Bolt019" geometry={nodes.Bolt019.geometry} material={materials['Metal_rough.003']} position={[0.092, -0.056, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.003, 0.004, 0.003]} />
-        <group name="Brake_rotor003" position={[0.049, 0, 0]} scale={[1.018, 0.873, 0.873]}>
-          <mesh name="Circle017" geometry={nodes.Circle017.geometry} material={materials['Brushed steel.003']} />
-          <mesh name="Circle017_1" geometry={nodes.Circle017_1.geometry} material={materials['Metal_rough.003']} />
-        </group>
-        <group name="Calipers003" position={[0.049, 0, 0]} scale={0.925}>
-          <mesh name="Plane015" geometry={nodes.Plane015.geometry} material={materials['Callipers.003']} />
-          <mesh name="Plane015_1" geometry={nodes.Plane015_1.geometry} material={materials['Callipers.003']} />
-        </group>
-        <mesh name="Logo003" geometry={nodes.Logo003.geometry} material={materials['Rim Paint.003']} position={[0.129, -0.222, 0]} scale={[1.018, 0.873, 0.873]} />
-        <group name="Rim003" position={[0.139, 0, 0]} rotation={[0, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle015" geometry={nodes.Circle015.geometry} material={materials['Metal_rough.003']} />
-          <mesh name="Circle015_1" geometry={nodes.Circle015_1.geometry} material={materials['Rim Paint.003']} />
-        </group>
-        <group name="The_Rim003" position={[0.139, 0, 0]} rotation={[-2.513, 0, -Math.PI / 2]} scale={[0.873, 1.018, 0.873]}>
-          <mesh name="Circle014" geometry={nodes.Circle014.geometry} material={materials['Rim Paint.003']} />
-          <mesh name="Circle014_1" geometry={nodes.Circle014_1.geometry} material={materials['Rubber.003']} />
-        </group>
-        <mesh name="Tires003" geometry={nodes.Tires003.geometry} material={materials['Material.005']} position={[-0.002, 0, 0]} rotation={[Math.PI, 0, Math.PI]} scale={[0.925, 0.94, 0.94]} />
-      </group> */}
+      
     </group>
   )
 }

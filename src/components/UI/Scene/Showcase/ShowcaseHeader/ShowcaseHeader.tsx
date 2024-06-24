@@ -15,6 +15,9 @@ const ShowcaseHeader = () => {
     isInPaintSelection,
     setIsInCarSelection,
     setIsInPaintSelection,
+    isInWheelSelection,
+
+    setIsInWheelSelection,
   } = useUIStore();
   const { startEngine } = useContext(EngineContext);
 
@@ -25,6 +28,9 @@ const ShowcaseHeader = () => {
     }
     if (isInPaintSelection) {
       setIsInPaintSelection(false);
+    }
+    if (isInWheelSelection) {
+      setIsInWheelSelection(false);
     }
   };
 

@@ -24,3 +24,8 @@ export type CarColorProps = {
   name: string;
   hexCode: string;
 };
+export type CarWheelProps = {
+  name: string;
+
+};
+
